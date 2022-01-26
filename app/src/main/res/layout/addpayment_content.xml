@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_54sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/lora_regular"
+            android:text="Enter your payment details :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etuserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorText"
+                android:fontFamily="@font/lora_regular"
+                android:hint="Name on card"
+                android:inputType="text"
+                android:textColorHint="@color/colorText" />
+
+            <com.wednesday.creditcardedittext.CreditCardEditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorText"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/lora_regular"
+                android:textColor="@color/colorText"
+                android:hint="Your card number"
+                android:inputType="numberPassword"
+                android:maxLength="19"
+                android:textColorHint="@color/colorText" />
+
+
+            <com.wednesday.creditcardedittext.CreditCardEditText
+                android:id="@+id/etconfirmCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorText"
+                android:fontFamily="@font/lora_regular"
+                android:textColor="@color/colorText"
+                android:hint="Confirm card number"
+                android:inputType="numberPassword"
+                android:maxLength="19"
+                android:textColorHint="@color/colorText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lora_regular"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="0.3"
+                    android:textAlignment="center"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:backgroundTint="@color/colorText"
+                    android:textColorHint="@color/colorText" />
+
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/lora_regular"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:hint="YY"
+                    android:layout_weight="0.3"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:maxLength="2"
+                    android:backgroundTint="@color/colorText"
+                    android:textColorHint="@color/colorText"/>
+
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/lora_regular"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:backgroundTint="@color/colorText"
+                    android:textColorHint="@color/colorText"/>
+
+
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_54sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Remember my card details"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_weight="0.2"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/lora_regular"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+
+
+        </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddcard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_70sdp"
+                android:fontFamily="@font/lora_regular"
+                android:background="@drawable/submitbutton"
+                android:text="Add card"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <include layout="@layout/include_bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>
